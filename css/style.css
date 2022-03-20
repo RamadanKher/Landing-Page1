@@ -490,18 +490,4 @@ footer ul li {
     width: 40%;
   }
 }
-@media only screen and (max-device-width: 360px) and (min-device-width: 331px)
-html, html body, body #wrapper 
-{
-    width: 330px !important;
-    min-width: 320px !important;
-    max-width: 360px !important;
-    overflow-x: hidden;
-}
-@media only screen and (max-device-width: 360px) and (min-device-width: 331px)
-html, html body, body #wrapper {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    overflow-x: hidden;
-}
+
