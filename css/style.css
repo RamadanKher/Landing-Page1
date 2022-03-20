@@ -265,14 +265,7 @@ header {
 /*..// SECTION3 STYLE START */
 
 #section3 {
-  background: -webkit-gradient(
-    linear,
-    left bottom, left top,
-    color-stop(1.63%, rgba(241, 246, 253, 0)),
-    color-stop(20.5%, #f1f6fd),
-    color-stop(58.57%, #f1f6fd),
-    to(#ffffff)
-  );
+  background: (linear, left bottom, left top, color-stop(1.63%, rgba(241, 246, 253, 0)),color-stop(20.5%, #f1f6fd),color-stop(58.57%, #f1f6fd),to(#ffffff));
   background: -o-linear-gradient(
     bottom,
     rgba(241, 246, 253, 0) 1.63%,
@@ -496,4 +489,19 @@ footer ul li {
   .main__item--p1 {
     width: 40%;
   }
+}
+@media only screen and (max-device-width: 360px) and (min-device-width: 331px)
+html, html body, body #wrapper 
+{
+    width: 330px !important;
+    min-width: 320px !important;
+    max-width: 360px !important;
+    overflow-x: hidden;
+}
+@media only screen and (max-device-width: 360px) and (min-device-width: 331px)
+html, html body, body #wrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: hidden;
 }
