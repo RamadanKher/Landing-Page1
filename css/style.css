@@ -51,7 +51,7 @@ header {
   width: 123px;
   background: #217bf4;
   -webkit-box-shadow: 0px 10px 22px -6px #217bf442;
-          box-shadow: 0px 10px 22px -6px #217bf442;
+  box-shadow: 0px 10px 22px -6px #217bf442;
 
   border-radius: 14px;
 
@@ -68,8 +68,8 @@ header {
 .secrhIcon {
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .navbar .navbar-nav ul {
   margin-left: 2rem;
@@ -126,10 +126,12 @@ header {
 }
 .main__item--btn:hover {
   -webkit-transform: translateY(6px);
-      -ms-transform: translateY(6px);
-          transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  transform: translateY(6px);
 }
-
+.navbar .navbar-nav li {
+  padding: 0 0.4rem !important;
+}
 /* // MAIN SECTION END   */
 
 /*// header end */
@@ -189,8 +191,8 @@ header {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 #section1Item1 {
   position: relative;
@@ -230,7 +232,7 @@ header {
 .section2__item {
   background-color: #ffffff;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   border-radius: 14px;
 }
@@ -240,7 +242,7 @@ header {
   -webkit-box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
-          box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px 0px,
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
@@ -265,13 +267,29 @@ header {
 /*..// SECTION3 STYLE START */
 
 #section3 {
-  background: (linear, left bottom, left top, color-stop(1.63%, rgba(241, 246, 253, 0)),color-stop(20.5%, #f1f6fd),color-stop(58.57%, #f1f6fd),to(#ffffff));
+  background: (
+    linear,
+    left bottom,
+    left top,
+    color-stop(1.63%, rgba(241, 246, 253, 0)),
+    color-stop(20.5%, #f1f6fd),
+    color-stop(58.57%, #f1f6fd),
+    to(#ffffff)
+  );
   background: -o-linear-gradient(
     bottom,
     rgba(241, 246, 253, 0) 1.63%,
     #f1f6fd 20.5%,
     #f1f6fd 58.57%,
     #ffffff 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    color-stop(1.63%, rgba(241, 246, 253, 0)),
+    color-stop(20.5%, #f1f6fd),
+    color-stop(58.57%, #f1f6fd),
+    to(#ffffff)
   );
   background: linear-gradient(
     0deg,
@@ -285,10 +303,10 @@ header {
   background: #ffffff;
   border-radius: 14px;
   -webkit-box-shadow: 14px 22px 52px -12px #7f7f7f21;
-          box-shadow: 14px 22px 52px -12px #7f7f7f21;
+  box-shadow: 14px 22px 52px -12px #7f7f7f21;
   -webkit-transform: rotate(70deg);
-      -ms-transform: rotate(70deg);
-          transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
   position: relative;
   right: 200%;
   -webkit-transition: 1s ease;
@@ -299,10 +317,10 @@ header {
   background: #ffffff;
   border-radius: 14px;
   -webkit-box-shadow: 14px 22px 52px -12px #7f7f7f21;
-          box-shadow: 14px 22px 52px -12px #7f7f7f21;
+  box-shadow: 14px 22px 52px -12px #7f7f7f21;
   -webkit-transform: rotate(70deg);
-      -ms-transform: rotate(70deg);
-          transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  transform: rotate(70deg);
   position: relative;
   left: 100%;
   -webkit-transition: 1s ease;
@@ -311,10 +329,10 @@ header {
 }
 .tanformAnmtion {
   -webkit-animation-delay: s;
-          animation-delay: s;
+  animation-delay: s;
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-          transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
 }
 .section3--title {
   color: var(--blueDark);
@@ -335,9 +353,40 @@ header {
   color: var(--blueDark);
 }
 
-/*..// SECTION3 STYLE END */
+/*..// SECTION 3 STYLE END */
 
-/*.. SECTION4 STYLE  */
+/*.. SECTION 4 STYLE  */
+.section4--img {
+  border-top-width: 0.6rem;
+  border-right-width: 0.6rem;
+  border-left-width: 0.6rem;
+  border-bottom: 0.3rem;
+
+  border-radius: 50%;
+  padding: 0.8rem;
+  border-color: #ffaf2e #ffaf2e #f8dbad #ffaf2e;
+  border-style: dashed;
+}
+.section4__item1 {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  border-radius: 14px;
+}
+.section4__item {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+  border-radius: 14px;
+}
+
+.Check--img {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 33%;
+}
 .section4__links {
   width: 20em;
   margin: auto;
@@ -346,6 +395,7 @@ header {
 .section4__links ul {
   background: rgb(225, 235, 248);
   border-radius: 14px;
+  padding: 0.4rem 0.7rem !important;
 }
 .section4__links ul li a {
   font-family: Inter;
@@ -355,7 +405,7 @@ header {
   line-height: 16px;
   letter-spacing: 0.01em;
   text-align: center;
-  margin: 0 20px;
+  padding: 1em;
 }
 .section4__links ul li:nth-child(3) {
   padding: 10px 23px;
@@ -425,7 +475,7 @@ footer ul li {
 #footerInput {
   border: 1px solid rgba(255, 255, 255, 0.85);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 12px;
   outline: none;
 }
@@ -447,8 +497,8 @@ footer ul li {
   }
   .section6__item .d-flex {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 560px) {
@@ -489,5 +539,7 @@ footer ul li {
   .main__item--p1 {
     width: 40%;
   }
+  .section4__links ul {
+    padding: 0 2rem !important;
+  }
 }
-
